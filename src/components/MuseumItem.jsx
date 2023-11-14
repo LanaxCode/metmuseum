@@ -7,7 +7,7 @@ const MuseumItem = ({ object }) => {
           <img
             src={object.primaryImage}
             alt={object.objectName}
-            style={{ maxWidth: "30%", height: "auto" }}
+            style={{ maxWidth: "100%", height: "auto" }}
           />
         </div>
       );

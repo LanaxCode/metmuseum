@@ -2,11 +2,11 @@ import MuseumList from "../components/MuseumList";
 
 const Home = () => {
     return ( 
-        <div>
-            <MuseumList>
-            <p>hello</p>
-            </MuseumList>
-        </div>
+        <section>
+            <h1>Metropolitan Museum of Art</h1>
+            <MuseumList />
+            
+        </section>
      );
 }
  
