@@ -53,12 +53,16 @@ console.log(filteredObjects)
   return (
     <section>
       <SearchBar onSearch={handleSearch} />
-      <div className="listgrid">
+      <article className="listgrid">
       {/* Rendern von MuseumItem-Komponenten basierend auf dem Zustand von filteredObjects */}
-      {filteredObjects.map((object) => (
-        <MuseumItem key={object.objectID} object={object} />
+      
+      {filteredObjects.map((object, i) => (
+        
+        <MuseumItem key={i} object={object} />
+        
       ))}
-      </div>
+      
+      </article>
     </section>
   );
 };

@@ -1,27 +1,30 @@
+import '../css/MuseumItem.css'
+
 const MuseumItem = ({ object }) => {
     // Überprüfen, ob das Bild vorhanden ist, bevor es gerendert wird
-    if (object.primaryImage) {
+    
       return (
-        
-        <div>
-          <h3>{object.objectName}</h3>
-          <img
-            src={object.primaryImage}
-            alt={object.objectName}
-            style={{ maxWidth: "100%", height: "auto" }}
-          />
-        </div>
-      );
-    } else {
-      return (
-        <div>
-          <h3>{object.objectName}</h3>
-          <p>Bild nicht verfügbar</p>
-        </div>
+        <section className="gridItem">
+{/* <h3>"{object.title}"</h3> */}
+          {/* <p>{object.artistDisplayName}</p> */}
+          <div className='imgDiv'>
+            <div className='layer'>
+            <h3 className='itemTitle'>{object.title}</h3>
+            </div>
               
-      );
-    }
+          <img
+            src={object.primaryImageSmall}
+            alt={object.objectName}
+          />
+          </div>
+          <div className='gridItemText'>
+            <h3 className='itemTitle'>{object.title}</h3>
+           <p>{object.artistDisplayName}</p> 
+          </div>
+          
 
+        </section>
+      );
   };
 
   

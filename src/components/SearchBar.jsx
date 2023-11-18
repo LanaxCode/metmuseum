@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 
 const SearchBar = ({ onSearch }) => {
 
@@ -9,8 +9,7 @@ const SearchBar = ({ onSearch }) => {
     };
 
     const handleSearch = () => {
-        // Call the onSearch prop with the current query
-        onSearch(query);
+              onSearch(query);
       };
 
     return ( 

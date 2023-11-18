@@ -1,0 +1,14 @@
+.headerSec{
+    height: 50vh;
+    background-image: url('https://images.metmuseum.org/CRDImages/ad/original/ap91.27.1.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.headerTitle{
+    font-size: 5rem;
+    color: rgb(33, 33, 33);
+}
