@@ -7,10 +7,12 @@ import '../css/MuseumList.css'
 const MuseumList = () => {
   const [objects, setObjects] = useState([]);
   const [filteredObjects, setFilteredObjects] = useState([]);
+  const [spinner, setSpinner] = useState(false)
 
   // Funktion zum Abfragen von Daten basierend auf der Suchanfrage
   const fetchData = async (query) => {
     try {
+      setSpinner(true)
       const response = await fetch(`https://collectionapi.metmuseum.org/public/collection/v1/search?q=${query}`);
       const data = await response.json();
 
@@ -37,6 +39,7 @@ const MuseumList = () => {
     } catch (error) {
       console.error("Error fetching data:", error);
     }
+    finally{setSpinner(false)}
   };
 console.log(filteredObjects)
   // Funktion zum Aktualisieren des Zustands basierend auf der Suchanfrage
@@ -53,6 +56,9 @@ console.log(filteredObjects)
   return (
     <section>
       <SearchBar onSearch={handleSearch} />
+      
+        {spinner && (<span className="loader"/>) }
+      
       <article className="listgrid">
       {/* Rendern von MuseumItem-Komponenten basierend auf dem Zustand von filteredObjects */}
       

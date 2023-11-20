@@ -1,4 +1,6 @@
 import { useState} from "react";
+import '../css/SearchBar.css'
+import lupe from '../assets/img/lupe-50.png'
 
 const SearchBar = ({ onSearch }) => {
 
@@ -13,10 +15,17 @@ const SearchBar = ({ onSearch }) => {
       };
 
     return ( 
-        <section>
-<input type="text" value={query} onChange={handleInputChange} />
-      <button onClick={handleSearch}>Search</button>
-        </section>
+
+<div class="wrap">
+    <div class="search">
+      <input type="text" class="searchTerm" id="input_text" value={query} onChange={handleInputChange} ></input>
+      <button type="submit" class="searchButton" onClick={handleSearch}>
+        <img className="icon" src={lupe}/>
+      </button>
+    </div>
+  </div>
+
+
      );
 }
  
