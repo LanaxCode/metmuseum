@@ -56,9 +56,7 @@ console.log(filteredObjects)
   return (
     <section>
       <SearchBar onSearch={handleSearch} />
-      
         {spinner && (<span className="loader"/>) }
-      
       <article className="listgrid">
       {/* Rendern von MuseumItem-Komponenten basierend auf dem Zustand von filteredObjects */}
       
