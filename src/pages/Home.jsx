@@ -6,7 +6,7 @@ const Home = () => {
     return ( 
         <section>
             <NavBar/>
-            <Header/
+            <Header/>
             <MuseumList /> 
         </section>
      );
