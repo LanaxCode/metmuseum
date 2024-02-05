@@ -145,7 +145,11 @@ const MuseumList = () => {
   return (
     <section>
       <SearchBar onSearch={handleSearch} />
+<<<<<<< HEAD
       {spinner && <span className="loader" />}
+=======
+        {spinner && (<span className="loader"/>) }
+>>>>>>> 4822bc730b58668d0991fd9dbcb1b058ea5b6a19
       <article className="listgrid">
         {/* Rendern von MuseumItem-Komponenten basierend auf dem Zustand von filteredObjects */}
         {filteredObjects.map((object, i) => (
