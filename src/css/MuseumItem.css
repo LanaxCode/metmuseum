@@ -10,13 +10,11 @@
     justify-content: space-between;
     border-radius: 10px;
     height: 370px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 8px #ddd;
     cursor: pointer;
 
 }
 
-.overlay {
+/* .overlay {
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -27,7 +25,7 @@
     background: #fff;
     color: #151e3f;
     transition: all 0.9s ease;
-  }
+  } */
   
   .imgDiv:hover .overlay {
     opacity: 0.8;
@@ -41,17 +39,22 @@
     position: relative;
 }
 
+.gridItem:hover{
+transform: scale(1.02);
+}
+
 
 .mainImg {
-width: 100%;
+width: 108%;
 object-fit: cover;
 height: 100%;
 
 }
 
 .gridItemText {
-    background: #ffffff;
+    background:#c7c7c765;
     padding: 15px 10px;/* Zentriere den Text vertikal */
+    color: #333;
   }
   
  .itemTitle {
@@ -60,5 +63,10 @@ height: 100%;
     white-space: nowrap !important;
     margin-bottom: 10px;
     font-size: 1.2rem;
-    text-align: center;
+
+  }
+
+  .date{
+    color: #611717;
+    margin-top: 1rem;
   }

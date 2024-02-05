@@ -1,14 +1,15 @@
 
 
 .listgrid {
-    margin-top: 5vh;
+    margin-top: 10vh;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 240px));
     /* grid-auto-rows: 350px; */
-    justify-content: center;
+
     row-gap: 8rem;
     column-gap:10rem ;
-    padding: 5rem;
+    margin-left: 5rem;
+
 
 }
 
