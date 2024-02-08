@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import MuseumItem from './MuseumItem';
 import SearchBar from './SearchBar';
-import Popup from './Popup'; // Neues Popup-Modul hinzugefügt
+import Popup from './Popup'; 
 import '../css/MuseumList.css';
 
 const MuseumList = () => {
