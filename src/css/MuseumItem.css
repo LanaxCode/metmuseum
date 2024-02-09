@@ -14,7 +14,6 @@
 
 }
 
-  
   .imgDiv:hover .overlay {
     opacity: 0.8;
     transition: all 0.5s ease;
@@ -25,24 +24,26 @@
     overflow: hidden;
     height: 100%;
     position: relative;
+
 }
 
 .gridItem:hover{
 transform: scale(1.02);
 }
 
-
 .mainImg {
-width: 108%;
+width: 100%;
 object-fit: cover;
+text-align: center;
 height: 100%;
-
+border-radius: 15px;
 }
 
 .gridItemText {
     background:#c7c7c765;
     padding: 15px 10px;/* Zentriere den Text vertikal */
     color: #333;
+    border-radius: 0px 0px 15px 15px;
   }
   
  .itemTitle {
