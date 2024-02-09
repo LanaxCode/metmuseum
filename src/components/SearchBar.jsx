@@ -54,7 +54,7 @@ const SearchBar = ({ onSearch }) => {
           className="searchTerm"
           value={query}
           onChange={handleInputChange}
-          placeholder="Search the Collection"
+          placeholder="Search the Collection z.B. Van Gogh"
         />
         <button type="button" className="searchButton" onClick={handleSearch}>
           <img className="icon" src={lupe} alt="search icon" />
