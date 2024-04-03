@@ -1,5 +1,7 @@
 import '../css/Header.css'
 import React, { useState, useEffect } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 const Header = () => {
@@ -42,10 +44,8 @@ const Header = () => {
         <h1 className='headerTitle'>{objectsHeader.title}</h1> 
         <p className='artist'>{objectsHeader.artistDisplayName
 }</p>
-           
         </article>
         </section>
-
      );
 }
  
